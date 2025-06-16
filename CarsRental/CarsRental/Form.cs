@@ -20,7 +20,6 @@ namespace CarsRental
 
             // Привязка обработчиков событий кнопок "Поиск"
             this.carsFinder.Click += new System.EventHandler(this.carsFinder_Click);
-            this.clientsFinder.Click += new System.EventHandler(this.clientsFinder_Click);
             this.fuelsFinder.Click += new System.EventHandler(this.fuelsFinder_Click);
             this.typesFinder.Click += new System.EventHandler(this.typesFinder_Click);
             this.ordersFinder.Click += new System.EventHandler(this.ordersFinder_Click);
@@ -152,12 +151,6 @@ namespace CarsRental
         {
             SearchInDataGridView(this.carsDataGridView, DataGridFinder1.Text);
         }
-
-        private void clientsFinder_Click(object sender, EventArgs e)
-        {
-            SearchInDataGridView(this.clientsDataGridView, DataGridFinder2.Text);
-        }
-
         private void fuelsFinder_Click(object sender, EventArgs e)
         {
             SearchInDataGridView(this.fuelsDataGridView, DataGridFinder3.Text);
